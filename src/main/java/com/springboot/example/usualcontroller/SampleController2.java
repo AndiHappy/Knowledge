@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.springboot.example.dao.UsualDao;
 import com.springboot.example.usualserver.UsualServer;
 
+
 @Controller
 
 // The second class-level annotation is @EnableAutoConfiguration.
@@ -21,13 +22,13 @@ import com.springboot.example.usualserver.UsualServer;
 public class SampleController2 {
 
   @Autowired
-  // @Resource
+//   @Resource
   public UsualServer usualServer;
 
   @Resource
   public UsualDao usualDao;
 
-  @RequestMapping(value = "/hello", method = RequestMethod.GET)
+  @RequestMapping(value = "/hello", method = RequestMethod.POST)
   @ResponseBody
   String home(@RequestParam(value = "name", required = false) String name) {
     return usualServer.getDaoTest(name);
