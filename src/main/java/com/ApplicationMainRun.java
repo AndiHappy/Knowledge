@@ -16,6 +16,9 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan
 public class ApplicationMainRun {
   public static void main(String[] args) throws Exception {
+    int a;
+    
+    
     SpringApplication.run(ApplicationMainRun.class, args);
   }
 }
