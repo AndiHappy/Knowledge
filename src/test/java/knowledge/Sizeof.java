@@ -1,4 +1,4 @@
-package com;
+package knowledge;
 public class Sizeof
 {
     public static void main (String [] args) throws Exception
