@@ -40,6 +40,7 @@ import java.util.Random;
 import java.util.Spliterator;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
+import java.util.function.Consumer;
 import java.util.function.DoubleConsumer;
 import java.util.function.IntConsumer;
 import java.util.function.LongConsumer;
@@ -841,6 +842,10 @@ public class ThreadLocalRandom extends Random {
                 } while (++i < f);
             }
         }
+
+        @Override public boolean tryAdvance (Consumer<? super Integer> action) {
+            return false;
+        }
     }
 
     /**
@@ -896,6 +901,9 @@ public class ThreadLocalRandom extends Random {
             }
         }
 
+        @Override public boolean tryAdvance (Consumer<? super Long> action) {
+            return false;
+        }
     }
 
     /**
@@ -949,6 +957,10 @@ public class ThreadLocalRandom extends Random {
                     consumer.accept(rng.internalNextDouble(o, b));
                 } while (++i < f);
             }
+        }
+
+        @Override public boolean tryAdvance (Consumer<? super Double> action) {
+            return false;
         }
     }
 
