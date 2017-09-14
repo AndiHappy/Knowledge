@@ -12,6 +12,7 @@ public class ConcurrentHashMapTest {
   public static void main(String[] args) {
     System.out.println("concurrentHashMap");
     ConcurrentHashMap<String, Object> hashmap = new ConcurrentHashMap<String, Object>(16);
+    System.out.println ();
     new Thread(new Ha(hashmap)).start();
     new Thread(new Ha(hashmap)).start();
     new Thread(new Ha(hashmap)).start();
