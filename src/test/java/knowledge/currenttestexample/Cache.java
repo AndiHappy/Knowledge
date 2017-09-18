@@ -1,4 +1,4 @@
-package knowledge;
+package knowledge.currenttestexample;
 
 import java.util.HashMap;
 import java.util.Map;

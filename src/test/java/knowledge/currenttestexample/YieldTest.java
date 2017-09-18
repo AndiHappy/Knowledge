@@ -1,4 +1,4 @@
-package knowledge;
+package knowledge.currenttestexample;
 public class YieldTest extends Thread {  
   
     public YieldTest(String name) {  

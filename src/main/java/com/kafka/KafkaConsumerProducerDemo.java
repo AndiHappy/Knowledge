@@ -9,6 +9,5 @@ public class KafkaConsumerProducerDemo {
 
         Consumer consumerThread = new Consumer(KafkaProperties.TOPIC,KafkaProperties.CONSUMER1);
         consumerThread.start ();
-
     }
 }

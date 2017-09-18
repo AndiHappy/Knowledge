@@ -1,11 +1,6 @@
-package knowledge;
+package knowledge.currenttestexample;
 
 import java.util.concurrent.locks.Lock;
-
-import knowledge.ThreadState.Blocked;
-import knowledge.ThreadState.Sync;
-import knowledge.ThreadState.TimeWaiting;
-import knowledge.ThreadState.Waiting;
 
 /**
  * 10-11

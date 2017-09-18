@@ -1,4 +1,4 @@
-package knowledge;
+package knowledge.currenttestexample;
 
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.SynchronousQueue;

@@ -1,4 +1,4 @@
-package knowledge;
+package knowledge.currenttestexample;
 public class Sizeof
 {
     public static void main (String [] args) throws Exception

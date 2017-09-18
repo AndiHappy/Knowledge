@@ -1,4 +1,4 @@
-package knowledge;
+package knowledge.currenttestexample;
 class Exception1 extends Exception {}
 
 class Exception2 extends Exception1 {}

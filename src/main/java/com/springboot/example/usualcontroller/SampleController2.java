@@ -1,7 +1,7 @@
 package com.springboot.example.usualcontroller;
 
-import javax.annotation.Resource;
-
+import com.springboot.example.dao.UsualDao;
+import com.springboot.example.usualserver.UsualServer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,8 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.springboot.example.dao.UsualDao;
-import com.springboot.example.usualserver.UsualServer;
+import javax.annotation.Resource;
 
 
 @Controller

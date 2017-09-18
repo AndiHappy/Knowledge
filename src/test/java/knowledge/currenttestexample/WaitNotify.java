@@ -1,4 +1,4 @@
-package knowledge;
+package knowledge.currenttestexample;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

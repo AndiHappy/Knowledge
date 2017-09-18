@@ -1,4 +1,4 @@
-package knowledge;
+package knowledge.currenttestexample;
 
 import java.lang.management.ManagementFactory;
 import java.lang.management.ThreadInfo;

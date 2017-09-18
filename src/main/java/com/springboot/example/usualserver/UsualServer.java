@@ -1,9 +1,8 @@
 package com.springboot.example.usualserver;
 
+import com.springboot.example.dao.UsualDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import com.springboot.example.dao.UsualDao;
 
 @Service
 // @ComponentScan

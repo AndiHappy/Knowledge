@@ -1,4 +1,4 @@
-package knowledge;
+package knowledge.currenttestexample;
 
 /**
  * @author zhailz

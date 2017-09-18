@@ -60,6 +60,13 @@
 			<artifactId>kafka_2.10</artifactId>
 			<version>0.8.0</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.sun.jmx/jmxri -->
+		<dependency>
+			<groupId>com.sun.jmx</groupId>
+			<artifactId>jmxri</artifactId>
+			<version>1.2.1</version>
+		</dependency>
+
 
 	</dependencies>
 
