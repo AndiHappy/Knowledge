@@ -50,13 +50,15 @@ public class Producer extends Thread {
     }
 
     public static void main(String[] args) {
-        Producer producer = new Producer (KafkaProperties.TOPIC2, true);
+        Producer producer = new Producer (KafkaProperties.TOPIC2, false);
         ProducerRecord<Integer, String> recoder = new ProducerRecord<Integer, String>
-            (producer.topic, 123,"message_123");
-        producer.producer.send (recoder);
-        recoder = new ProducerRecord<Integer, String>
-            (producer.topic, 1234,"message_1234");
-        producer.producer.send (recoder);
+            (producer.topic, 129240,"message_123");
+        while(true) {
+          producer.producer.send (recoder);
+          recoder = new ProducerRecord<Integer, String>
+              (producer.topic, 129241,"message_1234");
+          producer.producer.send (recoder);
+        }
     }
 }
 
